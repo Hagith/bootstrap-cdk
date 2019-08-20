@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "bootstrap-cdk": [
+        "dist/bootstrap-cdk"
+      ],
+      "bootstrap-cdk/*": [
+        "dist/bootstrap-cdk/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
