@@ -4,14 +4,17 @@
     "directive-selector": [
       true,
       "attribute",
-      "lib",
+      "bs",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "lib",
+      "bs",
       "kebab-case"
-    ]
+    ],
+    "component-class-suffix": false,
+    "directive-class-suffix": false,
+    "no-host-metadata-property": false
   }
 }
