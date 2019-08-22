@@ -42,12 +42,13 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
+          "inlineStyle": true,
           "style": "scss"
         }
       },
       "root": "demo",
       "sourceRoot": "demo/src",
-      "prefix": "app",
+      "prefix": "demo",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
