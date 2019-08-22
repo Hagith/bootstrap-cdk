@@ -7,7 +7,6 @@
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",
-      "prefix": "bsp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
