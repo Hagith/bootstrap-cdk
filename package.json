@@ -2,13 +2,13 @@
   "name": "bootstrap-cdk",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
     "build": "yarn lib:build",
-    "test": "ng test",
-    "lint": "ng lint",
+    "demo": "yarn demo:serve",
     "e2e": "ng e2e",
-    "lib:build": "ng build bootstrap-cdk"
+    "lint": "ng lint",
+    "test": "ng test",
+    "lib:build": "ng build bootstrap-cdk",
+    "demo:serve": "ng serve demo --host 0.0.0.0"
   },
   "private": true,
   "dependencies": {
