@@ -1,0 +1,9 @@
+<table bs-table [dataSource]="dataSource">
+  <bs-text-column name="position"></bs-text-column>
+  <bs-text-column name="name"></bs-text-column>
+  <bs-text-column name="weight"></bs-text-column>
+  <bs-text-column name="symbol"></bs-text-column>
+
+  <tr bs-header-row *bsHeaderRowDef="displayedColumns"></tr>
+  <tr bs-row *bsRowDef="let row; columns: displayedColumns;"></tr>
+</table>

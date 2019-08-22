@@ -1,6 +1,6 @@
 import { CdkTableModule } from '@angular/cdk/table';
 import { CommonModule } from '@angular/common';
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import {
   BsCell,
@@ -47,10 +47,4 @@ const EXPORTED_DECLARATIONS = [
   declarations: EXPORTED_DECLARATIONS,
 })
 export class BsTableModule {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: BsTableModule,
-      providers: [],
-    };
-  }
 }

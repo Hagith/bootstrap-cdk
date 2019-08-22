@@ -1,8 +1,14 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "../out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "bootstrap-cdk": [
+        "../src/public-api"
+      ]
+    }
   },
   "files": [
     "src/main.ts",
