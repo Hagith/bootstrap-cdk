@@ -1,6 +1,7 @@
 {
   "name": "@modernweb/angular-cdk-bootstrap",
   "version": "0.0.1-rc.2",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/cdk": "^8.2.3",
     "@angular/common": "^8.2.14",
