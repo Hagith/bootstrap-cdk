@@ -1,17 +1,19 @@
 {
   "name": "@modernweb/angular-cdk-bootstrap",
+  "private": true,
   "scripts": {
     "build": "ng build angular-cdk-bootstrap",
     "lint": "ng lint angular-cdk-bootstrap",
     "publish": "yarn build && yarn publish dist/angular-cdk-bootstrap",
     "test": "ng test angular-cdk-bootstrap --watch=false",
     "test:watch": "ng test angular-cdk-bootstrap",
+    "version:prod": "cd src/ && standard-version -a -i ../CHANGELOG.md",
+    "version:rc": "yarn version:prod --prerelease rc",
     "demo": "yarn demo:serve",
     "demo:build": "ng build demo --prod",
     "demo:serve": "ng serve demo --host 0.0.0.0",
     "demo:publish": "yarn demo:build && gh-pages --dist dist/demo"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^8.2.14",
     "@angular/cdk": "^8.2.3",
@@ -47,6 +49,7 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "ng-packagr": "^5.7.1",
     "protractor": "~5.4.2",
+    "standard-version": "^7.0.1",
     "ts-node": "~8.5.2",
     "tsickle": "^0.37.1",
     "tslint": "~5.20.1",

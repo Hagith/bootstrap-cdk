@@ -2,6 +2,8 @@
 
 Bootstrap components powered by [@angular/cdk](https://material.angular.io/cdk/categories)
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg)](https://conventionalcommits.org)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
