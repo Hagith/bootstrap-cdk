@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "bootstrap-cdk": [
-        "dist/bootstrap-cdk"
+      "angular-cdk-bootstrap": [
+        "dist/angular-cdk-bootstrap"
       ],
-      "bootstrap-cdk/*": [
-        "dist/bootstrap-cdk/*"
+      "angular-cdk-bootstrap/*": [
+        "dist/angular-cdk-bootstrap/*"
       ]
     }
   },

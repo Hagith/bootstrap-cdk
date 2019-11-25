@@ -5,7 +5,7 @@
     "outDir": "../out-tsc/app",
     "types": [],
     "paths": {
-      "bootstrap-cdk": [
+      "angular-cdk-bootstrap": [
         "../src/public-api"
       ]
     }

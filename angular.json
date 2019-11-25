@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "",
   "projects": {
-    "bootstrap-cdk": {
+    "angular-cdk-bootstrap": {
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",
@@ -135,5 +135,5 @@
   "cli": {
     "packageManager": "yarn"
   },
-  "defaultProject": "bootstrap-cdk"
+  "defaultProject": "angular-cdk-bootstrap"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-cdk",
+  "name": "@modernweb/angular-cdk-bootstrap",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/cdk": "^8.2.3",

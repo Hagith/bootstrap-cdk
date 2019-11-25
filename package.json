@@ -1,14 +1,12 @@
 {
-  "name": "bootstrap-cdk",
-  "version": "0.0.0",
+  "name": "@modernweb/angular-cdk-bootstrap",
   "scripts": {
-    "build": "yarn lib:build",
+    "build": "ng build angular-cdk-bootstrap",
+    "lint": "ng lint angular-cdk-bootstrap",
+    "publish": "yarn build && yarn publish dist/angular-cdk-bootstrap",
+    "test": "ng test angular-cdk-bootstrap --watch=false",
+    "test:watch": "ng test angular-cdk-bootstrap",
     "demo": "yarn demo:serve",
-    "e2e": "ng e2e",
-    "lint": "ng lint",
-    "test": "ng test",
-    "lib:build": "ng build bootstrap-cdk",
-    "lib:publish": "yarn lib:build && yarn publish dist/bootstrap-cdk",
     "demo:build": "ng build demo --prod",
     "demo:serve": "ng serve demo --host 0.0.0.0",
     "demo:publish": "yarn demo:build && gh-pages --dist dist/demo"

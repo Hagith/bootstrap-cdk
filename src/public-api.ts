@@ -1,5 +1,5 @@
 /**
- * Public API Surface of bootstrap-cdk
+ * Public API Surface of @modernweb/angular-cdk-bootstrap
  */
 
 export * from './table/index';

@@ -4,20 +4,20 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project bootstrap-cdk` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project bootstrap-cdk`.
-> Note: Don't forget to add `--project bootstrap-cdk` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project angular-cdk-bootstrap` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-cdk-bootstrap`.
+> Note: Don't forget to add `--project angular-cdk-bootstrap` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
-Run `ng build bootstrap-cdk` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build angular-cdk-bootstrap` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build bootstrap-cdk`, go to the dist folder `cd dist/bootstrap-cdk` and run `npm publish`.
+After building your library with `ng build angular-cdk-bootstrap`, go to the dist folder `cd dist/angular-cdk-bootstrap` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test bootstrap-cdk` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test angular-cdk-bootstrap` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 
