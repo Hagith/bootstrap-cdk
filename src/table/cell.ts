@@ -5,34 +5,37 @@ import {
   CdkFooterCell,
   CdkFooterCellDef,
   CdkHeaderCell,
-  CdkHeaderCellDef
+  CdkHeaderCellDef,
 } from '@angular/cdk/table';
 import { Directive, Input } from '@angular/core';
 
 @Directive({
   selector: '[bsCellDef]',
-  providers: [{ provide: CdkCellDef, useExisting: BsCellDef }]
+  providers: [{ provide: CdkCellDef, useExisting: BsCellDef }],
 })
-export class BsCellDef extends CdkCellDef {}
+export class BsCellDef extends CdkCellDef {
+}
 
 @Directive({
   selector: '[bsHeaderCellDef]',
-  providers: [{ provide: CdkHeaderCellDef, useExisting: BsHeaderCellDef }]
+  providers: [{ provide: CdkHeaderCellDef, useExisting: BsHeaderCellDef }],
 })
-export class BsHeaderCellDef extends CdkHeaderCellDef {}
+export class BsHeaderCellDef extends CdkHeaderCellDef {
+}
 
 @Directive({
   selector: '[bsFooterCellDef]',
-  providers: [{ provide: CdkFooterCellDef, useExisting: BsFooterCellDef }]
+  providers: [{ provide: CdkFooterCellDef, useExisting: BsFooterCellDef }],
 })
-export class BsFooterCellDef extends CdkFooterCellDef {}
+export class BsFooterCellDef extends CdkFooterCellDef {
+}
 
 @Directive({
   selector: '[bsColumnDef]',
   providers: [
     { provide: CdkColumnDef, useExisting: BsColumnDef },
-    { provide: 'MAT_SORT_HEADER_COLUMN_DEF', useExisting: BsColumnDef }
-  ]
+    { provide: 'MAT_SORT_HEADER_COLUMN_DEF', useExisting: BsColumnDef },
+  ],
 })
 export class BsColumnDef extends CdkColumnDef {
   @Input('bsColumnDef') name: string;
@@ -46,25 +49,28 @@ export class BsColumnDef extends CdkColumnDef {
   selector: 'bs-header-cell, th[bs-header-cell]',
   host: {
     class: 'bs-header-cell',
-    role: 'columnheader'
-  }
+    role: 'columnheader',
+  },
 })
-export class BsHeaderCell extends CdkHeaderCell {}
+export class BsHeaderCell extends CdkHeaderCell {
+}
 
 @Directive({
   selector: 'bs-footer-cell, td[bs-footer-cell]',
   host: {
     class: 'bs-footer-cell',
-    role: 'gridcell'
-  }
+    role: 'gridcell',
+  },
 })
-export class BsFooterCell extends CdkFooterCell {}
+export class BsFooterCell extends CdkFooterCell {
+}
 
 @Directive({
   selector: 'bs-cell, td[bs-cell]',
   host: {
     class: 'bs-cell',
-    role: 'gridcell'
-  }
+    role: 'gridcell',
+  },
 })
-export class BsCell extends CdkCell {}
+export class BsCell extends CdkCell {
+}
