@@ -1,18 +1,10 @@
-import {
-  CDK_ROW_TEMPLATE,
-  CdkFooterRow,
-  CdkFooterRowDef,
-  CdkHeaderRow,
-  CdkHeaderRowDef,
-  CdkRow,
-  CdkRowDef
-} from '@angular/cdk/table';
+import { CDK_ROW_TEMPLATE, CdkFooterRow, CdkFooterRowDef, CdkHeaderRow, CdkHeaderRowDef, CdkRow, CdkRowDef } from '@angular/cdk/table';
 import { ChangeDetectionStrategy, Component, Directive, ViewEncapsulation } from '@angular/core';
 
 @Directive({
   selector: '[bsHeaderRowDef]',
   providers: [{ provide: CdkHeaderRowDef, useExisting: BsHeaderRowDef }],
-  inputs: ['columns: bsHeaderRowDef']
+  inputs: ['columns: bsHeaderRowDef', 'sticky: bsHeaderRowDefSticky'],
 })
 export class BsHeaderRowDef extends CdkHeaderRowDef {
 }
@@ -20,7 +12,7 @@ export class BsHeaderRowDef extends CdkHeaderRowDef {
 @Directive({
   selector: '[bsFooterRowDef]',
   providers: [{ provide: CdkFooterRowDef, useExisting: BsFooterRowDef }],
-  inputs: ['columns: bsFooterRowDef']
+  inputs: ['columns: bsFooterRowDef', 'sticky: bsFooterRowDefSticky'],
 })
 export class BsFooterRowDef extends CdkFooterRowDef {
 }
@@ -28,7 +20,7 @@ export class BsFooterRowDef extends CdkFooterRowDef {
 @Directive({
   selector: '[bsRowDef]',
   providers: [{ provide: CdkRowDef, useExisting: BsRowDef }],
-  inputs: ['columns: bsRowDefColumns']
+  inputs: ['columns: bsRowDefColumns', 'when: bsRowDefWhen'],
 })
 export class BsRowDef<T> extends CdkRowDef<T> {
 }
@@ -38,13 +30,13 @@ export class BsRowDef<T> extends CdkRowDef<T> {
   template: CDK_ROW_TEMPLATE,
   host: {
     class: 'bs-header-row',
-    role: 'row'
+    role: 'row',
   },
   // See note on CdkTable for explanation on why this uses the default change detection strategy.
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
   exportAs: 'bsHeaderRow',
-  providers: [{ provide: CdkHeaderRow, useExisting: BsHeaderRow }]
+  providers: [{ provide: CdkHeaderRow, useExisting: BsHeaderRow }],
 })
 export class BsHeaderRow extends CdkHeaderRow {
 }
@@ -54,13 +46,13 @@ export class BsHeaderRow extends CdkHeaderRow {
   template: CDK_ROW_TEMPLATE,
   host: {
     class: 'bs-footer-row',
-    role: 'row'
+    role: 'row',
   },
   // See note on CdkTable for explanation on why this uses the default change detection strategy.
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
   exportAs: 'bsFooterRow',
-  providers: [{ provide: CdkFooterRow, useExisting: BsFooterRow }]
+  providers: [{ provide: CdkFooterRow, useExisting: BsFooterRow }],
 })
 export class BsFooterRow extends CdkFooterRow {
 }
@@ -70,13 +62,13 @@ export class BsFooterRow extends CdkFooterRow {
   template: CDK_ROW_TEMPLATE,
   host: {
     class: 'bs-row',
-    role: 'row'
+    role: 'row',
   },
   // See note on CdkTable for explanation on why this uses the default change detection strategy.
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None,
   exportAs: 'bsRow',
-  providers: [{ provide: CdkRow, useExisting: BsRow }]
+  providers: [{ provide: CdkRow, useExisting: BsRow }],
 })
 export class BsRow extends CdkRow {
 }

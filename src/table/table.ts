@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 
 @Component({
   selector: 'bs-table, table[bs-table]',
-  exportAs: 'bs-table',
+  exportAs: 'bsTable',
   template: CDK_TABLE_TEMPLATE,
   host: {
     class: 'table',
@@ -14,4 +14,5 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class BsTable<T> extends CdkTable<T> {
+  protected stickyCssClass = 'bs-table-sticky';
 }

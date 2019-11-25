@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "ng build angular-cdk-bootstrap",
+    "build:watch": "ng build angular-cdk-bootstrap --watch",
     "lint": "ng lint angular-cdk-bootstrap",
     "release": "yarn build && cp -a *.md dist/angular-cdk-bootstrap && yarn publish --cwd dist/angular-cdk-bootstrap --access public --non-interactive .",
     "test": "ng test angular-cdk-bootstrap --watch=false",

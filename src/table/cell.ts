@@ -36,6 +36,10 @@ export class BsFooterCellDef extends CdkFooterCellDef {}
 })
 export class BsColumnDef extends CdkColumnDef {
   @Input('bsColumnDef') name: string;
+
+  @Input() sticky: boolean;
+
+  @Input() stickyEnd: boolean;
 }
 
 @Directive({
