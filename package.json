@@ -4,7 +4,7 @@
   "scripts": {
     "build": "ng build angular-cdk-bootstrap",
     "lint": "ng lint angular-cdk-bootstrap",
-    "publish": "yarn build && yarn publish dist/angular-cdk-bootstrap",
+    "release": "yarn build && cp -a *.md dist/angular-cdk-bootstrap && yarn publish --access public --tag $npm_package_version dist/angular-cdk-bootstrap",
     "test": "ng test angular-cdk-bootstrap --watch=false",
     "test:watch": "ng test angular-cdk-bootstrap",
     "version:prod": "cd src/ && standard-version -a -i ../CHANGELOG.md",
