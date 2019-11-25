@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-rc.3](https://github.com/modernweb-pl/angular-cdk-bootstrap/compare/v0.0.1-rc.2...v0.0.1-rc.3) (2019-11-25)
+
+
+### Bug Fixes
+
+* **table:** sticky ([a59c6c9](https://github.com/modernweb-pl/angular-cdk-bootstrap/commit/a59c6c92003e15078e92d58d7ee7e30d5cda39e8))
+
 ### [0.0.1-rc.2](https://github.com/modernweb-pl/angular-cdk-bootstrap/compare/v0.0.1-rc.1...v0.0.1-rc.2) (2019-11-25)
 
 ### [0.0.1-rc.1](https://github.com/modernweb-pl/angular-cdk-bootstrap/compare/v0.0.1-rc.0...v0.0.1-rc.1) (2019-11-25)
